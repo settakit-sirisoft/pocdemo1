@@ -17,7 +17,7 @@ type FooResponse struct {
 	Bar string `json:"bar"`
 }
 
-func PrintRequest(rq *FooRequest) FooResponse {
+func PrintRequest(rq FooRequest) FooResponse {
 
 	resp := FooResponse{
 		Foo: "bar",
